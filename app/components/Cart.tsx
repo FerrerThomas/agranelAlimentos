@@ -25,7 +25,7 @@ export default function Cart() {
     })
 
     message += `\nTotal de la compra: $${getTotalPrice().toLocaleString()}\n\n`
-    message += "Espero tu confirmación. ¡Gracias!"
+    message += "¡Gracias!"
 
     const encodedMessage = encodeURIComponent(message)
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`

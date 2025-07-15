@@ -224,11 +224,11 @@ export const products: { [key: string]: Product[] } = {
     },
     {
       name: "Mix Energía x800g (Bananas, nueces, pasas rubias y negras, mani y almendras)",
-      prices: { "800g": 7100 },
+      prices: { "1kg": 7100 },
     },
     {
       name: "Mix Premium x800g (Castañas, nueces, almendras y avellanas)",
-      prices: { "800g": 16900 },
+      prices: { "1kg": 16900 },
     },
     {
       name: "Nueces Mariposa Extra Light",
