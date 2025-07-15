@@ -6,24 +6,19 @@ import { Button } from "@/components/ui/button"
 
 const carouselImages = [
   {
-    src: "/placeholder.svg?height=200&width=800",
+    src: "/imagen1.png?height=200&width=800",
     alt: "Ofertas especiales en frutos secos",
-    title: "Frutos Secos Premium",
+    title: "",
   },
   {
-    src: "/placeholder.svg?height=200&width=800",
+    src: "/imagen2.png?height=200&width=800",
     alt: "Productos orgánicos y naturales",
-    title: "Productos Orgánicos",
+    title: "",
   },
   {
-    src: "/placeholder.svg?height=200&width=800",
+    src: "/imagen3.png?height=200&width=800",
     alt: "Cereales y legumbres a granel",
-    title: "Cereales y Legumbres",
-  },
-  {
-    src: "/placeholder.svg?height=200&width=800",
-    alt: "Productos veganos y sin TACC",
-    title: "Vegano y Sin TACC",
+    title: "",
   },
 ]
 
@@ -56,7 +51,7 @@ export default function ImageCarousel() {
         {carouselImages.map((image, index) => (
           <div key={index} className="w-full h-full flex-shrink-0 relative">
             <img src={image.src || "/placeholder.svg"} alt={image.alt} className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-white text-lg md:text-2xl font-bold text-center px-4">{image.title}</h3>
             </div>
           </div>

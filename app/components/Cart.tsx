@@ -64,7 +64,7 @@ export default function Cart() {
                   {items.map((item) => (
                     <div key={item.id} className="flex items-center gap-2 p-3 border rounded-lg">
                       <div className="flex-1 min-w-0">
-                        <h4 className="font-medium text-sm truncate">{item.name}</h4>
+                        <h4 className="font-medium text-sm line-clamp-2">{item.name}</h4>
                         {item.weight !== "unit" && <p className="text-xs text-gray-600">{item.weight}</p>}
                         <p className="text-sm font-bold text-slate-700">${item.price.toLocaleString()} c/u</p>
                       </div>
